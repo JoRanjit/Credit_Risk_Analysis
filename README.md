@@ -3,7 +3,7 @@
 ### Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans. Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models - this project employs *'imbalanced-learn' and 'scikit-learn'* libraries to build and evaluate models using resampling.
 #### We are using the credit card credit dataset from LendingClub, a peer-to-peer lending services company. 
 
-#### As part of deliverable 1 - we use Resampling Models to Predict Credit Risk and SMOTEENN algorithm to predit credit risk. And we will compare the accuracy scores of each algorithm. With each model we will calculate the following:
+#### As part of deliverable 1 - we use Resampling Models to Predict Credit Risk and SMOTEENN algorithm to predict credit risk. And we will compare the accuracy scores of each algorithm. With each model we will calculate the following:
 :one: Accuracy Score
 :two: Confusion Matrix
 :three: Imbalanced Classification Report
@@ -14,13 +14,13 @@
 
 ![naive_score]( https://github.com/JoRanjit/Credit_Risk_Analysis/blob/main/Images/naive_ROS_metrics.PNG)
 
-#### :black_medium_square: Step #2 - Next we used SMOTE Oversmapling algorithm:
+#### :black_medium_square: Step #2 - Next we used SMOTE Oversampling algorithm:
 
 :ballot_box_with_check: The model's Accuracy Score = 0.6844
 
 ![smotescore]( https://github.com/JoRanjit/Credit_Risk_Analysis/blob/main/Images/SMOTE_metrics.PNG)
 
-#### :black_medium_square: Step #3 - Next we undesampled the dataset using ClusterCentroid resampler:
+#### :black_medium_square: Step #3 - Next we undersampled the dataset using ClusterCentroid resampler:
 
 :ballot_box_with_check: The model's Accuracy Score = 0.5917
 
@@ -53,7 +53,7 @@
 * Of the 4 resamplers - :trophy: SMOTE Oversampling algorithm with the accuracy score of 0.6844 is the topper.
 * Of the 2 ensemblers - :trophy: EasyEnsembleClassifier Adaboost algorithm with the accuracy score of 0.9317 is the best.
 
-* Aaaboost algorithm also assigned a recall score of 0.92 to high_risk items whch also shows that that is the best model of all the 6 that we used today. 
+* Adaboost algorithm also assigned a recall score of 0.92 to high-risk items which also shows that that is the best model of all the 6 that we used today. 
 
 * The top 5 features used by the model are:
   * total_rec_prncp
@@ -62,6 +62,5 @@
   * last_pymnt_amnt
   * total_rec_int
   
-But eventhough the model had good accuracy scores and recall rates compared to others, we still - 
-## :no_entry:  DO NOT recommend any of these models as the precision scores to predict a high risk is still very very low at 0.09.
-
+But even though the model had good accuracy scores and recall rates compared to others, we still - 
+### :no_entry:  DO NOT recommend any of these models as the precision and f1 scores to predict a high risk is still very very low.
